@@ -8,7 +8,6 @@ import passwordGenerator from '../assets/images/passwordGenerator.png';
 import noteTaker from '../assets/images/noteTaker.png'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-//import { getByTitle } from '@testing-library/react';
 
 class Carousel extends React.Component {
 
@@ -22,7 +21,7 @@ class Carousel extends React.Component {
                     subTitle: ' Displays the top 5 technology articles and Entry Level technology jobs to help new Developers stay up to date and find a job. Utilized HTML5, CSS3, AJAX, HTTP GET requests, and Server-side APIs.',
                     imgSrc: techIt,
                     link: 'https://github.com/StudyGroup2021/tech.it',
-                    liveLink: 'https://',
+                    liveLink: 'https://studygroup2021.github.io/tech.it/',
                     selected: false
                 },
                 {
@@ -31,6 +30,7 @@ class Carousel extends React.Component {
                     subTitle: 'GIT.Interview is a web-application that helps developers prepare for interview questions. The user can search a topic of interest, create an account and post new questions and answers. This is an application that utilizes Passport authentication, Express, handlebars and Sequelize',
                     imgSrc: gitInterview,
                     link: 'https://github.com/MSU-developmentTeam/Git.Interview',
+                    liveLink: 'https://git-interview21.herokuapp.com/',
                     selected: false
                 },
                 {
@@ -39,6 +39,7 @@ class Carousel extends React.Component {
                     subTitle: 'Generate secure passwords at a push of a button. Utlized HTML5, CSS3, JavaScript and jQuery.',
                     imgSrc: passwordGenerator,
                     link: 'https://github.com/progg1992/passwordGenerator',
+                    liveLink: 'https://progg1992.github.io/passwordGenerator/',
                     selected: false
                 },
                 {
@@ -46,7 +47,9 @@ class Carousel extends React.Component {
                     title: 'Note Taker',
                     subTitle: 'This is an application that can be used to write, save, and delete notes. It has an Express backend and can retrieve and save note data from a JSON file.',
                     imgSrc: noteTaker,
-                    link: 'https://github.com/progg1992/noteTaker'
+                    link: 'https://github.com/progg1992/noteTaker',
+                    liveLink: 'https://shrouded-lowlands-90629.herokuapp.com/',
+                    selected: false
                 }
             ]
         }
