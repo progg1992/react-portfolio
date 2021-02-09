@@ -1,45 +1,43 @@
 import React from 'react';
-import { Container, NavbarBrand } from 'react-bootstrap';
-import { BrowserRouter as Router, Link, /*Route*/ } from 'react-router-dom';
+import {BrowserRouter as Router, Link } from 'react-router-dom';
+import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import './App.css';
 
-//My Components
-import Footer from './components/Footer'
-
+import Footer from './components/Footer';
 class App extends React.Component {
+  
   constructor(props) {
     super(props);
     this.state = {
       title: 'Pierce Rogg',
       headerLinks: [
-        { title: 'Home', path: '/'},
-        { title: 'About', path: '/about'},
-        { title: 'Projects', path: '/projects'},
-        { title: 'Contact', path: '/contact'},
-        { title: 'Resume', path: '/resume'},
-        { title: 'Skills', path: '/skills'}
+        { title: 'Home', path: '/' },
+        { title: 'About', path: '/about' },
+        { title: 'Contact', path: '/contact' }
       ],
       home: {
-        title: 'Hi, my name is Pierce Rogg and I\'m the Developer For You.',
-        subtitle: 'Subtile Here'
+        title: 'Be Relentless',
+        subTitle: 'Projects the make a difference',
+        text: 'Checkout my projects below'
       },
       about: {
-        title: 'About Me.',
-      },
+        title: 'About Me'
+      },      
       projects: {
-        title: 'Projects',
+        title: 'Projects'
       },
       contact: {
-        title: 'Let\'s Work Together',
+        title: 'Let\'s Work Together'
       },
       resume: {
-        title: 'Resume',
+        title: 'Resume'
       },
       skills: {
-        title: 'Skills',
-      },
+        title: 'Skills'
+      }
+     
     }
   }
 
@@ -47,13 +45,12 @@ class App extends React.Component {
     return (
       <Router>
         <Container className="p-0" fluid={true}>
-
+          
           <Navbar className="border-bottom" bg="transparent" expand="lg">
             <Navbar.Brand>Pierce Rogg</Navbar.Brand>
 
             <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
             <Navbar.Collapse id="navbar-toggle">
-
               <Nav className="ml-auto">
                 <Link className="nav-link" to="/">Home</Link>
                 <Link className="nav-link" to="/about">About</Link>
@@ -69,7 +66,7 @@ class App extends React.Component {
 
         </Container>
       </Router>
-    )
+    );
   }
 }
 
